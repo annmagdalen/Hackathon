@@ -13,3 +13,60 @@
  *= require_tree .
  *= require_self
  */
+
+img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', arial, sans-serif;
+  background-color: #eaedf2;
+}
+
+.each_uni {
+  display: inline-block;
+  width: 30%;
+}
+
+.btn {
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid grey;
+  width:200px;
+  margin-top: 10px;
+}
+
+.universities ul {
+  margin: 1%;
+  padding: 0;
+  list-style: none; /* remove bullet points */
+}
+
+.universities ul li {
+  display: inline-block;; /* list items appear next to each other */
+  width: 26%; /* split gallery in 3 columns */
+  margin: 1%;
+  padding: 2%;
+  height: 200px;
+}
+
+.uni_image {
+  height: 150px;
+  overflow: hidden; /* hide image that goes over this height */
+}
+
+.each_uni {
+  background-color: white;
+  font-size: 20px;
+  height: 100px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,11 @@
+<%= form_for @University do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+
+  <%= f.submit (@university.new_record? ? "CREATE" : "UPDATE") %>
+
+<% end %>

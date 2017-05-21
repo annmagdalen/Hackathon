@@ -3,7 +3,9 @@
   <head>
     <title>Universities</title>
     <%= csrf_meta_tags %>
-
+  <%= link_to root_path do %>
+  <% image_tag("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/1280px-Flag_of_Norway.svg.png") %>
+  <% end %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>

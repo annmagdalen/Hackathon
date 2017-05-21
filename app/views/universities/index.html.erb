@@ -1,0 +1,25 @@
+<h1>UNIVERSITIES OF NORWAY</h1>
+
+<section class="universities">
+<ul>
+<% @universities.each do |university| %>
+  <li class="each_uni"><p><%= link_to university.name, university_path(university.id) %></p>
+    <br>
+  <div class="uni_image">
+    <%= link_to image_tag(university.image_url), university_path(university.id) %>
+  </div>
+</li>
+<% end %>
+</ul>
+
+<div class="btn">
+<%= link_to "ADD A NEW UNIVERSITY", new_university_path %>
+</div>
+
+</section>
+
+<br>
+<br>
+<footer>
+  &copy; Copyright 2017 Ann Magdalen
+</footer>
